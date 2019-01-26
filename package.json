@@ -1,0 +1,26 @@
+{
+  "name": "news-scraper",
+  "version": "1.0.0",
+  "description": "web app that scrapes news articles from a news site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knightlogan/NYTScraper.git"
+  },
+  "author": "Logan Knight",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knightlogan/NYTScraper/issues"
+  },
+  "homepage": "https://github.com/knightlogan/NYTScraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.4.6"
+  }
+}
