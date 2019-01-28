@@ -27,7 +27,7 @@ app.use(express.static("public"));
 mongoose.connect("mongodb://localhost/populatedb", { useNewUrlParser: true });
 var db = mongoose.connection;
 
-// if any errors than console errors
+// console log errors
 db.on("error", function (error) {
   console.log("Mongoose Error: ", error);
 });
@@ -40,7 +40,7 @@ db.once("open", function () {
 // Require the routes in our controllers js file
 require("./controllers/articlesController.js")(app);
 
-//Listen on PORT 8000 & notify us.
+//Listen on PORT 8000
 app.listen(PORT, function () {
   console.log("App running on port 8000");
 });

@@ -19,12 +19,6 @@ var ArticleSchema = new Schema({
     required: true,
     unique: true
   },
-  // articleSnippet is a required string and also unique to prevent duplicates
-  articleSnippet: {
-    type: String,
-    required: true,
-    unique: true
-  },
   // This  saves an array of all the comments as a property of article schema, ref
   // refers to the Comment model
   comment: [
